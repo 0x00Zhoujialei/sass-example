@@ -1,0 +1,12 @@
+// partials, 不会触发Sass生成css文件，方便其他.sass, .scss引用
+// 比如一些全局都可能用到的颜色啊字体大小啊这种可以存在partials里面
+// 然后在其他文件内使用@import引用
+// drawback: 使用@import居然会产生一次HTTP请求？我要这铁棒有什么用啊
+
+
+html,
+body,
+ul,
+ol
+  margin: 0
+  padding: 0
